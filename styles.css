@@ -1,0 +1,139 @@
+main {
+  display: grid;
+  gird-template-columns: minmax(2rem, 1fr) minmax (min-content, 94rem);
+}
+
+h1 {
+  color: #fc9483;
+  font-size: 13vw;
+  font-family: georgia, sans-serif; 
+  font-variant: small-caps;
+  font-weight: lighter;
+  -webkit-text-stroke-width: 0.25vw;
+  -webkit-text-stroke-color: #9e4244;
+  padding: 0.5vh, 0, 0.5vh, 0;
+  margin: 1vw; 
+}
+
+.subheading {
+  color: #905D5D; 
+  font-size: 5vw;
+  font-family: georgia, sans-serif;
+  letter-spacing: 1vw;
+  margin: 2vw;
+}
+
+.intro {
+  color: #3e002d;
+  font-family: georgia, sans-serif;
+  font-size: 3vw;
+  margin: 1vw;
+}
+
+hr {
+  border-top: 0.2vw dotted #fc9483;
+  style: "width:20%";
+}
+
+.img-div {
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 30%;
+  margin: auto;
+}
+
+figcaption { 
+  border-style: none;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+img {
+  max-width: 40%;
+  min-width: 25%
+}
+
+.questions-answers {
+  font-family: georgia, sans-serif;
+  text-color: #3e002d;
+  font-size: 3vw;
+  padding: 1rem;
+  margin: -0.5rem;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.question::first-letter {
+  font-size: 25px; 
+  font-weight: bold;
+  float: center;
+}
+
+.answer {
+  margin: 25px; 
+}
+
+.methods li {
+  padding: 10px;
+  list-style-type: none;
+}
+
+.methods li::before {
+  content: "\2022";
+  color: #fc9483;
+  font-weight: bold;
+  margin: 20px; 
+}
+
+.wording::before {
+  content: '"';
+  color: #fc9483;
+  font-size: 30px;
+}
+
+.wording::after {
+  content: ' "';
+  color: #fc9483;
+  font-size: 30px;
+}
+
+.wording {
+  font-size: 3vw;
+  color: #905D5D;
+}
+
+.resources.li {
+  padding: 2rem;
+  font-color: black;
+}
+
+a:link {
+  text-decoration: none;
+  font-color: black; 
+}
+a:hover {
+  color: #905D5D;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+a:active {
+  color: #FDAB9F;
+}
+
+footer a{
+  color: black;
+  font-style: normal;
+}
+footer a:hover, a:visited{
+  color: #905D5D;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
