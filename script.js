@@ -1,5 +1,7 @@
-//navbarHeading.classList.add('navbarHeading');
 const navbarHeading = document.createElement('div');
+navbarHeading.classList.add('navbarHeading');
+
+const navbarHeadingText = document.createElement('span');
 
 function scrollFunction() {
   const navbar = document.querySelector(".navbar");
@@ -19,8 +21,8 @@ function scrollFunction() {
 
     const children = navbar.children;
     navbar.appendChild(children[1]);//logo
-    navbar.appendChild(children[2]);//heading
-    navbar.appendChild(children[0]);//menu
+    navbar.appendChild(children[0]);//heading
+    navbar.appendChild(children[2]);//menu
 
   } else {
 
@@ -38,7 +40,9 @@ function scrollFunction() {
   }
 }
 
+
 window.addEventListener('scroll', scrollFunction);
+
 const throttle = (callback, delay) => {
   let pending = false;
 
@@ -53,27 +57,26 @@ const throttle = (callback, delay) => {
   }
 }
 
-//const throttledScroll = throttle(scrollFunction, 100);
 window.addEventListener('scroll', scrollFunction);
 
 //Navbar Heading styling
 navbarHeading.style.fontSize = '19px';
 navbarHeading.style.fontFamily = 'georgia, sans-serif';
 navbarHeading.style.alignSelf = 'center';
-navbarHeading.style.letterSpacing = 'letter-spacing: 0.5vw';
+navbarHeading.style.letterSpacing = '0.5vw';
 navbarHeading.style.margin = '20px';
+navbarHeading.style.textAlign = 'end';
 
+const navbarContent = document.querySelector(".navbar-content");
+navbarContent.style.display = "flex";
+navbarContent.style.justifyContent = "center";
+navbarHeading.appendChild(navbarHeadingText);
 
-/*if(!navbar.contains(navbarHeading)) {
-  navbar.appendChild(navbarHeading);
-};
+if (subHeading) {
+  navbarHeading.textContent = subHeading.textContent;
+} else {
+  navbarHeading.remove();
+}
 
-//navbarHeading.textContent = document.getElementById("subheading");
-//navbarHeading.remove();
-//subHeading.remove();
-
-  if (subHeading) {
-    navbarHeading.textContent = subHeading.textContent;
-  } else {
-    navbarHeading.remove();
-  }*/
+/*navbarHeadingText.style.textAlign = 'center';
+navbarHeadingText.style.alignSelf = 'center';*/
