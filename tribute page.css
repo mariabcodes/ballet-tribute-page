@@ -146,10 +146,31 @@ input[type="checkbox"] {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait) {
   .credits-1, .credits {
     display: flex;
     align-items: center;
+    margin: auto;
+    text-align: center;
+  }
+
+  .word-section1 {
+    margin: auto;
+    justify-items: center;
+  }
+
+  .icons img {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+
+  .extra-info, .tags, .h4, .author-box {
+    word-wrap: normal;
+    flex-wrap: wrap;
+  }
+
+  .author-box {
+    justify-content: center;
   }
 }
 
