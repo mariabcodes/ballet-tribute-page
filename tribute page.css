@@ -63,7 +63,8 @@
   position: absolute;
   display: none;
   border-radius: 8px;
-  top: 35px;
+  top: 32px;
+  transform: translateX(-50%);
 }
 
 .dropdown li + li {
@@ -84,10 +85,10 @@
   display: block;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none;
 }
-
+ 
 .hamburger {
   display: none;
   font-size: 24px;
@@ -101,6 +102,7 @@ input[type=checkbox] {
     background-color: #d87093;
     right: 0;
     left: 0;
+    top: 90px;
     text-align: center;
     padding: 16px 0;
   }
@@ -115,7 +117,7 @@ input[type=checkbox] {
     margin-top: 12px;
   }
 
-  input[type=checked]:checked ~ .menu {
+  input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
 
@@ -125,8 +127,9 @@ input[type=checkbox] {
 
   .dropdown {
     left: 50%;
-    top: 50%;
-    transform: translateX(35%);
+    top: 100%;
+    transform: translateX(-50%);
+    border: 2px solid #f0f8ff;
   }
 
   .dropdown li:hover {

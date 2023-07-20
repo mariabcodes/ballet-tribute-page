@@ -65,7 +65,7 @@ navbarHeading.style.fontFamily = 'georgia, sans-serif';
 navbarHeading.style.alignSelf = 'center';
 navbarHeading.style.letterSpacing = '0.5vw';
 navbarHeading.style.margin = '20px';
-navbarHeading.style.textAlign = 'end';
+navbarHeading.style.textAlign = 'center';
 
 const navbarContent = document.querySelector(".navbar-content");
 navbarContent.style.display = "flex";
