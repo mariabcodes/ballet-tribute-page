@@ -139,6 +139,7 @@ input[type="checkbox"] {
 
   .questions-answers {
     margin: 0 5%;
+    font-size: 20px;
   }
 }
 
@@ -177,12 +178,10 @@ input[type="checkbox"] {
 
   .author-box {
     justify-content: center;
-<<<<<<< Updated upstream
-=======
   }
 
   .questions-answers {
-    font-size: small;
+    font-size: 20px;
     margin: 0;
     padding: 0;
   }
@@ -190,7 +189,6 @@ input[type="checkbox"] {
   .question, .answer, .questions-answers {
     padding-left: -50px;
     margin-right: -20%;
->>>>>>> Stashed changes
   }
 }
 
@@ -295,10 +293,7 @@ img {
   display: block;
   height: auto;
 }
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 .questions-answers, .credits-1 {
   font-family: georgia, sans-serif;
   font-size: 15px;
@@ -309,7 +304,6 @@ img {
   margin-top: 0;
 }
 
-<<<<<<< Updated upstream
 .question-and-answer1, 
 .question-and-answer3-4-container,
 .question-and-answer3-4, 
@@ -323,10 +317,10 @@ img {
 .question-and-answer9 {
   display: flex;
   flex-wrap: wrap;
-=======
+}
+
 #image1 {
   max-width: 100%; 
->>>>>>> Stashed changes
 }
 
 .img-div {
@@ -338,21 +332,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-<<<<<<< Updated upstream
-}
-
-.question-and-answer1-1 {
-  flex: 1 1 300px;
-}
-
-.question-and-answer1-1 p {
-  margin-top: 0;
-}
-
-#image1 {
-  max-width: 100%; 
-=======
->>>>>>> Stashed changes
 }
 
 /* ------ QUESTION 4 (METHODS) ------- */
