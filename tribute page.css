@@ -96,7 +96,7 @@ input[type="checkbox"] {
   user-select: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-width: 500px), (max-width: 400px) {
   .menu {
     display: none;
     position: absolute;
@@ -153,7 +153,11 @@ input[type="checkbox"] {
   text-align: center;
 }
 
-@media (max-width: 768px) and (orientation: portrait) {
+@media (max-width: 768px), (max-width: 500px), (max-width: 400px) and (orientation: portrait) {
+  * {
+    font-size: 1rem;
+  }
+  
   .credits-1, .credits {
     display: flex;
     align-items: center;
@@ -296,7 +300,6 @@ img {
 
 .questions-answers, .credits-1 {
   font-family: georgia, sans-serif;
-  font-size: 15px;
   margin: 0 15%;
 }
 
