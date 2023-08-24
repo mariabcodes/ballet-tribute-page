@@ -420,6 +420,8 @@ img {
 }
 
 .credits, .credits-1 {
+  display: inline-flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -457,7 +459,7 @@ img {
 .h3 {
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding: 0 20px 0 10px;
 }
 
 .h4 {
