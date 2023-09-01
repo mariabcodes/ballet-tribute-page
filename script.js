@@ -1,51 +1,21 @@
-const navbarHeading = document.createElement('div');
+let navbarHeading = document.createElement('div');
+const navbarHeadingText = document.createElement('span');
+const navbarContent = document.querySelector('.navbar-content');
+const subHeading = document.querySelector('subheading');
+
+navbarHeading.appendChild(navbarHeadingText);
 navbarHeading.classList.add('navbarHeading');
 
-const navbarHeadingText = document.createElement('span');
+// Navbar Heading Styling
+navbarHeading.style.fontSize = '19px';
+navbarHeading.style.fontFamily = 'georgia, sans-serif';
+navbarHeading.style.alignSelf = 'center';
+navbarHeading.style.letterSpacing = '0.5vw';
+navbarHeading.style.margin = '20px';
+navbarHeading.style.textAlign = 'center';
 
-function scrollFunction() {
-  const navbar = document.querySelector(".navbar");
-  const logo = document.querySelector(".logo");
-  const subHeading = document.getElementById("subheading");
-  const menu = document.querySelector(".menu");
-
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    navbar.style.padding = "5px";
-    navbar.style.opacity = "0.95";
-    logo.style.fontSize = "35px";
-    navbarHeading.textContent = subHeading.textContent;
-
-    navbar.appendChild(logo);
-    navbar.appendChild(navbarHeading);
-    navbar.appendChild(menu);
-
-    const children = navbar.children;
-    navbar.appendChild(children[1]);//logo
-    navbar.appendChild(children[0]);//heading
-    navbar.appendChild(children[2]);//menu
-
-  } else {
-
-    navbar.style.padding = "10px";
-    navbar.style.opacity = "1";
-    logo.style.fontSize = "55px";
-    navbarHeading.remove();
-  }
-  
-  if (!navbarHeading) {
-    navbarHeading = document.createElement('div');
-    navbarHeading.classList.add('navbarHeading');
-    navbarHeading.textContent = subHeading.textContent;
-    localStorage.setItem('navbarHeading', JSON.stringify(navbarHeading));
-  }
-}
-
-
-window.addEventListener('scroll', scrollFunction);
-
-const throttle = (callback, delay) => {
+const debounce = (callback, delay) => {
   let pending = false;
-
   return () => {
     if(!pending) {
       callback();
@@ -57,26 +27,48 @@ const throttle = (callback, delay) => {
   }
 }
 
-window.addEventListener('scroll', scrollFunction);
+window.addEventListener('scroll', debounce(scrollFunction, 200));
 
-//Navbar Heading styling
-navbarHeading.style.fontSize = '19px';
-navbarHeading.style.fontFamily = 'georgia, sans-serif';
-navbarHeading.style.alignSelf = 'center';
-navbarHeading.style.letterSpacing = '0.5vw';
-navbarHeading.style.margin = '20px';
-navbarHeading.style.textAlign = 'center';
+function scrollFunction() {
+  const navbar = document.querySelector('.navbar');
+  const logo = document.querySelector('.logo');
+  const subHeading = document.getElementById('subheading');
+  const menu = document.querySelector('.menu');
 
-const navbarContent = document.querySelector(".navbar-content");
-navbarContent.style.display = "flex";
-navbarContent.style.justifyContent = "center";
-navbarHeading.appendChild(navbarHeadingText);
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 
-if (subHeading) {
-  navbarHeading.textContent = subHeading.textContent;
-} else {
-  navbarHeading.remove();
+    const children = navbar.children;
+
+    navbarHeading.style.display = 'block';
+
+    // Navbar Styling On Scroll Down
+    navbar.style.padding = '5px';
+    navbar.style.opacity = '.95';
+    menu.style.color = '#9E0B81';
+    logo.style.fontSize = '35px';
+
+    // Navbar Functioning
+    navbarHeading.textContent = subHeading.textContent;
+
+    if (!navbar.contains(menu)) {
+      navbar.appendChild(menu);
+    }
+
+    navbar.appendChild(logo);
+    navbar.appendChild(navbarHeading);
+    navbar.appendChild(children[1]);//logo
+    navbar.appendChild(children[0]);//heading
+    navbar.appendChild(children[2]);//menu
+  } else {
+    navbar.style.padding = '10px';
+    navbar.style.opacity = '1';
+    logo.style.fontSize = '55px';
+    menu.style.color = '#000000';
+
+    navbarHeading.style.display = 'none';
+
+    if (!navbar.contains(menu)) {
+      navbar.appendChild(menu);
+    }
+  }
 }
-
-/*navbarHeadingText.style.textAlign = 'center';
-navbarHeadingText.style.alignSelf = 'center';*/

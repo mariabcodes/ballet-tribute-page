@@ -10,12 +10,10 @@
 
 <main>
 <body>
-  <navbar class="navbar">
-    <div class="navbar-content">
+  <nav class="navbar">
     <div class="logo">Ballet</div>
     
     <div class="navbarHeading"></div>
-    </div>
     <ul class="nav-links">
       <input type="checkbox" id="checkbox-toggle" />
       <label for="checkbox-toggle" class="hamburger">&#9776;</label>
@@ -33,24 +31,25 @@
         <li><a href="">Hot topics</a></li>
       </div>
     </ul>
-  </navbar>
+  </nav>
 
+  <!--<p id="test">Subheading</p>-->
   <p class="subheading" id="subheading">A quick look at the mysterious world ...</p>
   <div class="credits-1">
     <h2>By - Maria Bielik</h2>
     <h3>Posted 25th August 2023</h3>
-    <div class="icons-div-1"> <!-- MUST LOOK AT THIS -->
-     <ul class="icons"> <!-- can later make this into share buttons when have the website live - see the bookmarked post by Schier -->
-      <li><a class="twitter" href="https://twitter.com/share?url=<URL>&text=<TEXT>via=<USERNAME>">
-        <img class="twitter" alt="Twitter icon with link" src="twitter.png" title="twitter icons"></a></li>
-      <li><a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<URL>">
-        <img class="facebook" alt="Facebook icon with link" src="./facebook.png"></a></li>
-      <li><a class="pinterest" href="www.pinterest.com/pin/create/button/" data-pin-do="buttonPin" data-pin-config="beside" data-pin-color="red" data-pin-height="28">
-        <img class="pinterest" alt="Pinterest icon with link" src="./pinterest.png"></a></li>
-      <li><a class="mail" onclick="window.print(); return false;">
-        <img class="printer" alt="To print button" src="./print.png"></a></li>
-     </ul>
-    </div>
+    <div class="icons-div"> <!-- MUST LOOK AT THIS -->
+      <ul class="icons"> <!-- can later make this into share buttons when have the website live - see the bookmarked post by Schier -->
+       <li class="icons-li"><a class="twitter" href="https://twitter.com/share?url=https%3A%2F%2Fballettributepage.netlify.app&text=Check%20this%20out%3A&via=mariabielikcode"><!-- this one works -->
+         <img class="twitter" alt="Twitter icon with link" src="twitter.png" title="twitter icons"></a></li>
+       <li class="icons-li"><a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fballettributepage.netlify.app"><!-- this one works -->
+         <img class="facebook" alt="Facebook icon with link" src="./facebook.png"></a></li>
+       <li class="icons-li"><a class="linkedin" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fballettributepage.netlify.app&title=Ballet%20Blog%20Page"><!-- this one works -->
+         <img class="linkedin" alt="Linkedin icon with link" src="./linkedin.png"></a></li>
+       <li class="icons-li"><a class="mail" onclick="window.print(); return false;">
+         <img class="printer" alt="To print button" src="./print.png"></a></li>
+      </ul>
+     </div>
   </div><hr class="after-credit-hr-1">
   
   <div class="intro">
@@ -185,31 +184,31 @@
     <div class="credits">
       <h2>By - Maria Bielik</h2>
       <h3>Posted 25th August 2023</h3>
-      <div class="icons-div"> <!-- MUST LOOK AT THIS -->
-       <ul class="icons"> <!-- can later make this into share buttons when have the website live - see the bookmarked post by Schier -->
-        <li><a class="twitter" href="https://twitter.com/share?url=<URL>&text=<TEXT>via=<USERNAME>">
-          <img class="twitter" alt="Twitter icon with link" src="twitter.png" title="twitter icons"></a></li>
-        <li><a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<URL>">
-          <img class="facebook" alt="Facebook icon with link" src="./facebook.png"></a></li>
-        <li><a class="pinterest" href="www.pinterest.com/pin/create/button/" data-pin-do="buttonPin" data-pin-config="beside" data-pin-color="red" data-pin-height="28">
-          <img class="pinterest" alt="Pinterest icon with link" src="./pinterest.png"></a></li>
-        <li><a class="mail" onclick="window.print(); return false;">
-          <img class="printer" alt="To print button" src="./print.png"></a></li>
-       </ul>
-      </div>
+      <div class="icons-div">
+        <ul class="icons">
+         <li class="icons-li"><a class="twitter" href="https://twitter.com/share?url=https%3A%2F%2Fballettributepage.netlify.app&text=Check%20this%20out%3A&via=mariabielikcode">
+           <img class="twitter" alt="Twitter icon with link" src="twitter.png" title="twitter icons"></a></li>
+         <li class="icons-li"><a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fballettributepage.netlify.app">
+           <img class="facebook" alt="Facebook icon with link" src="./facebook.png"></a></li>
+         <li class="icons-li"><a class="linkedin" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fballettributepage.netlify.app&title=Ballet%20Blog%20Page">
+           <img class="linkedin" alt="Linkedin icon with link" src="./linkedin.png"></a></li>
+         <li class="icons-li"><a class="mail" onclick="window.print(); return false;">
+           <img class="printer" alt="To print button" src="./print.png"></a></li>
+        </ul>
+       </div>
     </div><hr class="after-credit-hr">
     <div class="extra-info">
       <h3 class="posted-under-links">Posted under: 
-        <a alt="Ballet category link" href="">Ballet</a>
-        <a alt="Dance category link" href="">Dance</a>
-        <a alt="Performing arts category link" href="">Performing arts</a>
+        <a class="post-links" alt="Ballet category link" href="">Ballet</a>
+        <a class="post-links" alt="Dance category link" href="">Dance</a>
+        <a class="post-links" alt="Performing arts category link" href="">Performing arts</a>
       </h3>
       <h4 class="tags">Tags:
-        <a alt="Ballet tag" href="">Ballet</a>
-        <a alt="Costumes tag" href="">Costumes</a>
-        <a alt="Ballet training tag" href="">Ballet Training</a>
-        <a alt="Pointe shoes tag" href="">Pointe work</a>
-        <a alt="Ballet history tag" href="">Ballet history</a>
+        <a class="tag-links" alt="Ballet tag" href="">Ballet</a>
+        <a class="tag-links" alt="Costumes tag" href="">Costumes</a>
+        <a class="tag-links" alt="Ballet training tag" href="">Ballet Training</a>
+        <a class="tag-links" alt="Pointe shoes tag" href="">Pointe work</a>
+        <a class="tag-links" alt="Ballet history tag" href="">Ballet history</a>
       </h4>
       <div class="about-author">
         <div class="author-box">
@@ -262,7 +261,8 @@
   <div class="web-author">
     <ul role="list" class="list">
       <li>Created By Maria Bielik</li>
-      <li><a class="email" href="mailto:mariabielil@outlook.com">mariabielik@outlook.com</a></li>
+      <!--<li><a class="email" href="mailto:mariabielil@outlook.com">mariabielik@outlook.com</a></li>-->
+      <li><a class="github" href="https://github.com/mariabcodes">GitHub - MariaBCodes</a></li>
     </ul>
   </div>
 </footer>
