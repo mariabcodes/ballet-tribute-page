@@ -72,28 +72,3 @@ function scrollFunction() {
     }
   }
 }
-
-
-
-
-//scrollFunction();
-
-/*if (!navbar.contains(navbarHeading)) {
-      navbar.appendChild(navbarHeading);//heading
-      navbar.insertBefore(navbarHeading, menu);
-    }*/
-
-    /*if (!navbar.contains(navbarHeading)) {
-      navbar.insertBefore(menu);
-    }*/
-
-    /*if (!navbar.contains(logo)) {
-    }*/
-    
-    //navbar.appendChild(logo);
-    //navbar.appendChild(children[1]);//logo
-    //navbar.appendChild(children[0]);//heading
-    //navbar.appendChild(children[2]);//menu;
-
-   //navbar.insertBefore(navbarHeading, menu);
-   //navbar.appendChild(children[0]);
